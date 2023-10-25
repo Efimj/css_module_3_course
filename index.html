@@ -1,0 +1,377 @@
+<!DOCTYPE html>
+<html class="html" lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Бобров Юхим модуль №1</title>
+    <script>
+      function scrollToSection(sectionId) {
+        const section = document.getElementById(sectionId);
+        if (section) {
+          section.scrollIntoView({ behavior: "smooth" });
+        }
+      }
+    </script>
+    <style>
+      * {
+        font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+        transition: linear all 0.1s;
+        margin: 0px;
+        padding: 0px;
+        scrollbar-width: thin;
+        scrollbar-color: #d5d5d5 #242424;
+        -webkit-tap-highlight-color: transparent;
+      }
+      *::-webkit-scrollbar {
+        width: 10px;
+      }
+      * ::-moz-selection {
+        background: rgb(0, 117, 29);
+        color: #ffffff;
+      }
+      * ::selection {
+        background: rgb(0, 117, 29);
+        color: #ffffff;
+      }
+      *::-webkit-scrollbar-track {
+        background: #e4e4e4;
+      }
+      *::-webkit-scrollbar-thumb {
+        background-color: #d8d8d8;
+        border-radius: 20px;
+        border: 3px solid #242424;
+      }
+      body {
+        padding: 0rem;
+        margin: 0px;
+        width: 100%;
+        height: 100%;
+        background-color: #ffffff;
+        color: #000000;
+      }
+      #root {
+        padding: 1rem;
+        height: 100%;
+        display: flex;
+        align-items: center;
+        flex-direction: column;
+        padding-top: 5rem;
+      }
+      .s05 {
+        height: 0.5rem;
+      }
+      .s1 {
+        height: 1rem;
+      }
+      .s2 {
+        height: 2rem;
+      }
+      .container {
+        display: flex;
+        flex-direction: column;
+        gap: 0.5rem;
+        max-width: 640px;
+      }
+      .p1 {
+        padding: 1rem;
+      }
+      .h {
+        margin: 0px;
+      }
+      .custom-border {
+        border-radius: 1rem;
+        border: 1px solid #bababa;
+      }
+      .colorized-header {
+        /* background: rgb(37, 184, 255);
+        background: linear-gradient(
+          90deg,
+          rgba(37, 184, 255, 1) 0%,
+          rgba(255, 255, 255, 0) 100%
+        );
+        padding: 0.3rem 1rem;
+        border-radius: 0.5rem; */
+        /* color: #ffffff; */
+      }
+      .secondary-text {
+        color: #3c3c3c;
+      }
+      .container-hover {
+        cursor: pointer;
+      }
+      .container-hover:hover {
+        box-shadow: rgba(0, 0, 0, 0.1) 0px 4px 12px;
+      }
+      .container-max-width-150 {
+        max-width: 150px;
+      }
+    </style>
+  </head>
+  <body>
+    <div id="root">
+      <h1>Бобров Юхим модуль №1</h1>
+      <div class="s2"></div>
+      <div class="container" style="width: 100%">
+        <h4 class="h">Питання:</h4>
+        <a
+          onclick="scrollToSection('11')"
+          style="cursor: pointer; color: #1362ff"
+        >
+          <span>11. Процес розробки сайту. Типовий підхід</span></a
+        >
+        <a
+          onclick="scrollToSection('36')"
+          style="cursor: pointer; color: #1362ff"
+        >
+          <span>36. CSS: Блочні елементи. Приклади</span></a
+        >
+      </div>
+      <div class="s2"></div>
+      <div class="container" id="11">
+        <h2 class="h">
+          Процес розробки сайту. Типовий підхід:
+        </h2>
+        <img
+          class="container container-hover custom-border"
+          style="width: 100%; margin-bottom: 1rem"
+          src="https://webcase.com.ua/wp-content/webp-express/webp-images/doc-root/wp-content/uploads/2022/01/frame-3.png.webp"
+        />
+        <h3 class="h">Етапи:</h3>
+        <div
+          style="
+            gap: 1rem;
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: space-around;
+            min-width: 180px;
+          "
+        >
+          <div
+            class="container container-hover p1 custom-border"
+            style="
+              gap: 0.5rem;
+              width: calc(33.33% - 1rem);
+              box-sizing: border-box;
+              min-width: 180px;
+            "
+          >
+            <h3 class="colorized-header h">
+              1 Аналіз потреб та обговорення вимог:
+            </h3>
+            <span class="secondary-text">
+              На цьому етапі важливо зрозуміти мету сайту, цільову аудиторію,
+              функціональні вимоги та дизайн. Клієнт і розробники спільно
+              визначають основні завдання проекту.
+            </span>
+          </div>
+          <div
+            class="container container-hover p1 custom-border"
+            style="
+              gap: 0.5rem;
+              width: calc(33.33% - 1rem);
+              box-sizing: border-box;
+              min-width: 180px;
+            "
+          >
+            <h3 class="colorized-header h">2 Планування:</h3>
+            <span class="secondary-text">
+              Розробляється детальний план проекту, включаючи графік, бюджет та
+              ресурси. Тут також вирішується, яка технологія та платформа будуть
+              використовуватися.
+            </span>
+          </div>
+          <div
+            class="container container-hover p1 custom-border"
+            style="
+              gap: 0.5rem;
+              width: calc(33.33% - 1rem);
+              box-sizing: border-box;
+              min-width: 180px;
+            "
+          >
+            <h3 class="colorized-header h">3 Дизайн:</h3>
+            <span class="secondary-text">
+              На цьому етапі розробляється дизайн сайту, включаючи структуру,
+              кольорову палітру, графіку та іншідизайн-елементи.
+            </span>
+          </div>
+          <div
+            class="container container-hover p1 custom-border"
+            style="
+              gap: 0.5rem;
+              width: calc(33.33% - 1rem);
+              box-sizing: border-box;
+              min-width: 180px;
+            "
+          >
+            <h3 class="colorized-header h">4 Розробка:</h3>
+            <span class="secondary-text">
+              Розробники починають писати код сайту на основі вимог та дизайну.
+              Вони створюють фронтенд (клієнтську частину) та бекенд (серверну
+              частину) сайту.
+            </span>
+          </div>
+          <div
+            class="container container-hover p1 custom-border"
+            style="
+              gap: 0.5rem;
+              width: calc(33.33% - 1rem);
+              box-sizing: border-box;
+              min-width: 180px;
+            "
+          >
+            <h3 class="colorized-header h">5 Тестування:</h3>
+            <span class="secondary-text">
+              Сайт перевіряється на помилки та недоліки. Виконується
+              функціональне та інтерфейсне тестування, а також тестування на
+              різних пристроях і браузерах.
+            </span>
+          </div>
+          <div
+            class="container container-hover p1 custom-border"
+            style="
+              gap: 0.5rem;
+              width: calc(33.33% - 1rem);
+              box-sizing: border-box;
+              min-width: 180px;
+            "
+          >
+            <h3 class="colorized-header h">6 Оптимізація та вдосконалення:</h3>
+            <span class="secondary-text">
+              На основі результатів тестування виправляються помилки та
+              покращуються функціональність та продуктивність сайту.
+            </span>
+          </div>
+          <div
+            class="container container-hover p1 custom-border"
+            style="
+              gap: 0.5rem;
+              width: calc(33.33% - 1rem);
+              box-sizing: border-box;
+              min-width: 180px;
+            "
+          >
+            <h3 class="colorized-header h">7 Запуск:</h3>
+            <span class="secondary-text">
+              Після успішного завершення тестування та оптимізації сайт готовий
+              до запуску. Він розміщується на сервері та доступний для
+              користувачів.
+            </span>
+          </div>
+          <div
+            class="container container-hover p1 custom-border"
+            style="
+              gap: 0.5rem;
+              width: calc(33.33% - 1rem);
+              box-sizing: border-box;
+              min-width: 180px;
+            "
+          >
+            <h3 class="colorized-header h">8 Підтримка та обслуговування:</h3>
+            <span class="secondary-text">
+              Після запуску сайту важливо надавати підтримку та обслуговування,
+              виправляти помилки, оновлювати контент і додавати нові функції.
+            </span>
+          </div>
+          <div
+            class="container container-hover p1 custom-border"
+            style="
+              gap: 0.5rem;
+              width: calc(33.33% - 1rem);
+              box-sizing: border-box;
+              min-width: 180px;
+            "
+          >
+            <h3 class="colorized-header h">9 Продвиження та маркетинг:</h3>
+            <span class="secondary-text">
+              Для того, щоб сайт був успішним, важливо розробити стратегію
+              продвиження та маркетингу, щоб залучити аудиторію.
+            </span>
+          </div>
+        </div>
+        <div class="s2"></div>
+        <div class="container" id="36">
+          <h2 class="h">
+            CSS: Блочні елементи. Приклади:
+          </h2>
+          <img
+            class="container container-hover custom-border"
+            style="width: 100%; margin-bottom: 1rem"
+            src="https://res.cloudinary.com/practicaldev/image/fetch/s--y9knEwLf--/c_imagga_scale,f_auto,fl_progressive,h_500,q_auto,w_1000/https://dev-to-uploads.s3.amazonaws.com/i/t6vbjui1jm8q52osgfcj.png"
+          />
+          <span>
+            Історично HTML-елементи було прийнято ділити на блокові та малі.
+            Блокові елементи займають всю ширину батька (контейнера), формально
+            створюючи «блок» (звідси і назва).
+          </span>
+          <span>
+            Значення властивості display, такі як block, list-item та table
+            роблять елементи блоковими. Блокові елементи генерують основний
+            блок, що містить лише блок елемента. Елементи зі значенням display:
+            list-item генерують додаткові блоки маркерів, які позиціонуються
+            щодо основного блоку.
+          </span>
+          <h3 class="h">Приклади:</h3>
+          <div class="container" style="flex-direction: row; flex-wrap: wrap">
+            <div
+              class="container container-hover p1 custom-border"
+              style="width: fit-content; padding: 0.5rem 1rem"
+            >
+              &lt;address&gt;
+            </div>
+            <div
+              class="container container-hover p1 custom-border"
+              style="width: fit-content; padding: 0.5rem 1rem"
+            >
+              &lt;article&gt;
+            </div>
+            <div
+              class="container container-hover p1 custom-border"
+              style="width: fit-content; padding: 0.5rem 1rem"
+            >
+              &lt;aside&gt;
+            </div>
+            <div
+              class="container container-hover p1 custom-border"
+              style="width: fit-content; padding: 0.5rem 1rem"
+            >
+              &lt;blockquote&gt;
+            </div>
+            <div
+              class="container container-hover p1 custom-border"
+              style="width: fit-content; padding: 0.5rem 1rem"
+            >
+              &lt;canvas&gt;
+            </div>
+            <div
+              class="container container-hover p1 custom-border"
+              style="width: fit-content; padding: 0.5rem 1rem"
+            >
+              &lt;dd&gt;
+            </div>
+            <div
+              class="container container-hover p1 custom-border"
+              style="width: fit-content; padding: 0.5rem 1rem"
+            >
+              &lt;div&gt;
+            </div>
+            <div
+              class="container container-hover p1 custom-border"
+              style="width: fit-content; padding: 0.5rem 1rem"
+            >
+              &lt;fieldset&gt;
+            </div>
+            <div
+              class="container container-hover p1 custom-border"
+              style="width: fit-content; padding: 0.5rem 1rem"
+            >
+              &lt;figcaption&gt;
+            </div>
+          </div>
+        </div>
+        <div class="s2"></div>
+        <div class="s2"></div>
+      </div>
+    </div>
+  </body>
+</html>
